@@ -48,13 +48,7 @@ print("Starting application...")
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={
-    r"/api/*": {
-        "origins": ["http://localhost:*"],
-        "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
-    }
-})
+CORS(app)
 
 # Configure upload folder
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'uploads')
@@ -66,8 +60,10 @@ print("Flask app and CORS initialized")
 
 # Load environment variables
 dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-load_dotenv(dotenv_path=dotenv_path, override=True)  # Use override=True to overwrite existing env vars
-logger.info(f"Loaded .env file from: {dotenv_path}")
+if not os.path.exists(dotenv_path):
+    dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+load_dotenv(dotenv_path=dotenv_path, override=True)
+logger.info("Environment variables loaded")
 
 # Get API keys from environment variables
 nvidia_api_key = os.getenv('NVIDIA_API_KEY')
@@ -575,9 +571,8 @@ def test_ai():
             }), 500
         
         # Log the API key status (masked for security)
-        if nvidia_api_key:
-            masked_key = nvidia_api_key[:8] + '...' + nvidia_api_key[-4:]
-            logger.info(f"Testing AI API with key: {masked_key}")
+        masked_key = nvidia_api_key[:8] + '...' + nvidia_api_key[-4:]
+        logger.info(f"Testing AI API with key: {masked_key}")
 
         headers = {
             'Content-Type': 'application/json',

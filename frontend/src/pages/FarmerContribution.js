@@ -27,6 +27,8 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
+const API_URL = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+
 const FarmerContribution = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -131,7 +133,7 @@ const FarmerContribution = () => {
         formDataToSend.append(`image${index}`, image);
       });
 
-      const response = await axios.post('http://localhost:5000/api/upload-disease', formDataToSend, {
+      const response = await axios.post(`${API_URL}/api/upload-disease`, formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }

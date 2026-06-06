@@ -153,10 +153,20 @@
     "description": "एआई-आधारित पौधा रोग पहचान और विशेषज्ञ कृषि सलाह के साथ किसानों को सशक्त बनाना",
     "quickLinks": "त्वरित लिंक",
     "contact": "संपर्क करें",
-    "email": "addankiavinash1@gmail.com",
+    "email": "ganeshbairu629@gmail.com",
     "rights": "सर्वाधिकार सुरक्षित।",
     "newsletter": "न्यूज़लेटर",
     "newsletter_desc": "नवीनतम अपडेट और कृषि टिप्स के लिए हमारे न्यूज़लेटर की सदस्यता लें",
     "subscribe": "सदस्यता लें"
-  }
+  },
+  "city_name": "अपना शहर दर्ज करें",
+  "crop_type": "फसल प्रकार चुनें",
+  "soil_type": "मिट्टी प्रकार चुनें",
+  "generating_advice": "सिफारिशें तैयार की जा रही हैं...",
+  "current_weather": "मौसम की वर्तमान स्थिति",
+  "temperature": "तापमान",
+  "humidity": "आर्द्रता",
+  "wind_speed": "हवा की गति",
+  "conditions": "स्थितियाँ",
+  "farming_recommendations": "कृषि सिफारिशें"
 } 

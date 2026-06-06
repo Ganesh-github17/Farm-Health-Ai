@@ -169,7 +169,7 @@
     "description": "Empowering farmers with AI-powered plant disease detection and expert agricultural advice",
     "quickLinks": "Quick Links",
     "contact": "Contact Us",
-    "email": "addankiavinash1@gmail.com",
+    "email": "ganeshbairu629@gmail.com",
     "rights": "All rights reserved.",
     "newsletter": "Newsletter",
     "newsletter_desc": "Subscribe to our newsletter for the latest updates and farming tips",
@@ -188,5 +188,15 @@
   "tensorflow_desc": "Advanced machine learning framework for accurate plant disease detection and classification",
   "react_desc": "Modern frontend framework for building responsive and interactive user interfaces",
   "flask_desc": "Lightweight and flexible backend framework for robust API development",
-  "pathology_desc": "Expert knowledge in plant diseases and agricultural best practices"
+  "pathology_desc": "Expert knowledge in plant diseases and agricultural best practices",
+  "city_name": "Enter your city",
+  "crop_type": "Select crop type",
+  "soil_type": "Select soil type",
+  "generating_advice": "Generating recommendations...",
+  "current_weather": "Current Weather",
+  "temperature": "Temperature",
+  "humidity": "Humidity",
+  "wind_speed": "Wind Speed",
+  "conditions": "Conditions",
+  "farming_recommendations": "Farming Recommendations"
 } 

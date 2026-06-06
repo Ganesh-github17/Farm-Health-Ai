@@ -18,6 +18,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import BugReportIcon from '@mui/icons-material/BugReport';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -115,6 +117,50 @@ const Footer = () => {
                   </Link>
                 </Box>
               ))}
+            </Box>
+          </Grid>
+
+          {/* Contact Us */}
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography variant="h6" color="text.primary" gutterBottom>
+              Contact Us
+            </Typography>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <Typography variant="body2" color="text.secondary">
+                  <strong>B.Ganesh Goud</strong>
+                </Typography>
+              </Box>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <EmailIcon sx={{ fontSize: 16, color: 'primary.main' }} />
+                <Link
+                  href="mailto:ganeshbairu629@gmail.com"
+                  color="text.secondary"
+                  sx={{
+                    textDecoration: 'none',
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
+                >
+                  ganeshbairu629@gmail.com
+                </Link>
+              </Box>
+              <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                <PhoneIcon sx={{ fontSize: 16, color: 'primary.main' }} />
+                <Link
+                  href="tel:+918179276066"
+                  color="text.secondary"
+                  sx={{
+                    textDecoration: 'none',
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
+                >
+                  +91 8179276066
+                </Link>
+              </Box>
             </Box>
           </Grid>
 

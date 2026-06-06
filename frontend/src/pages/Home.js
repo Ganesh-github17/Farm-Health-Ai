@@ -327,11 +327,21 @@ const Home = () => {
             <Grid item xs={12} sm={4}>
               <Box sx={{ p: 2 }}>
                 <Typography variant="h6" sx={{ fontWeight: 600, mb: 1, color: '#2196F3' }}>
+                  Name
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#000' }}>
+                  B.Ganesh Goud
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box sx={{ p: 2 }}>
+                <Typography variant="h6" sx={{ fontWeight: 600, mb: 1, color: '#2196F3' }}>
                   Email
                 </Typography>
                 <Typography variant="body1" sx={{ color: '#000' }}>
-                  <a href="mailto:addankiavinash1@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    addankiavinash1@gmail.com
+                  <a href="mailto:ganeshbairu629@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    ganeshbairu629@gmail.com
                   </a>
                 </Typography>
               </Box>
@@ -342,19 +352,9 @@ const Home = () => {
                   Phone
                 </Typography>
                 <Typography variant="body1" sx={{ color: '#000' }}>
-                  <a href="tel:+919182815770" style={{ textDecoration: 'none', color: 'inherit' }}>
-                    9182815770
+                  <a href="tel:+918179276066" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    +91 8179276066
                   </a>
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item xs={12} sm={4}>
-              <Box sx={{ p: 2 }}>
-                <Typography variant="h6" sx={{ fontWeight: 600, mb: 1, color: '#2196F3' }}>
-                  Location
-                </Typography>
-                <Typography variant="body1" sx={{ color: '#000' }}>
-                  Malkajgiri, Hyderabad 500017
                 </Typography>
               </Box>
             </Grid>

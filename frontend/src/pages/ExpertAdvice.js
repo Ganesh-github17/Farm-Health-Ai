@@ -26,6 +26,8 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
+const API_URL = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+
 const ExpertAdvice = () => {
   const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
@@ -78,7 +80,7 @@ const ExpertAdvice = () => {
     setAdvice('');
 
     try {
-      const response = await axios.post('http://localhost:5000/api/expert-advice', {
+      const response = await axios.post(`${API_URL}/api/expert-advice`, {
         ...formData,
         language: i18n.language
       });
@@ -87,7 +89,7 @@ const ExpertAdvice = () => {
       toast.success('Advice generated successfully!');
     } catch (err) {
       console.error('Error getting advice:', err);
-      setError(t('expertAdvice.error'));
+      setError(t('expertAdvice.error.submitFailed'));
       toast.error('Error getting advice');
     } finally {
       setLoading(false);
