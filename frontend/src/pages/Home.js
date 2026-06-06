@@ -303,6 +303,64 @@ const Home = () => {
           </Grid>
         </motion.div>
       </Box>
+
+      {/* Contact Us Section */}
+      <Box sx={{ mb: 6, mt: 8, py: 6, backgroundColor: '#f5f5f5', borderRadius: 2 }}>
+        <Container maxWidth="md">
+          <Typography
+            variant="h4"
+            gutterBottom
+            sx={{
+              fontWeight: 700,
+              textAlign: 'center',
+              mb: 4,
+              background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+              backgroundClip: 'text',
+              textFillColor: 'transparent',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+            }}
+          >
+            Contact Us
+          </Typography>
+          <Grid container spacing={3} sx={{ textAlign: 'center' }}>
+            <Grid item xs={12} sm={4}>
+              <Box sx={{ p: 2 }}>
+                <Typography variant="h6" sx={{ fontWeight: 600, mb: 1, color: '#2196F3' }}>
+                  Email
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#000' }}>
+                  <a href="mailto:addankiavinash1@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    addankiavinash1@gmail.com
+                  </a>
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box sx={{ p: 2 }}>
+                <Typography variant="h6" sx={{ fontWeight: 600, mb: 1, color: '#2196F3' }}>
+                  Phone
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#000' }}>
+                  <a href="tel:+919182815770" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    9182815770
+                  </a>
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Box sx={{ p: 2 }}>
+                <Typography variant="h6" sx={{ fontWeight: 600, mb: 1, color: '#2196F3' }}>
+                  Location
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#000' }}>
+                  Malkajgiri, Hyderabad 500017
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     </Container>
   );
 };

@@ -24,19 +24,24 @@ const About = () => {
   
   const teamMembers = [
     {
-      name: 'Addanki Avinash',
+      name: 'B.GANESH',
       role: t('team_lead'),
       avatar: '/avatars/team1.jpg',
     },
     {
-      name: 'Avula karthik',
+      name: 'P.ABHISHEK',
       role: t('ml_expert'),
       avatar: '/avatars/team2.jpg',
     },
     {
-      name: 'Charan',
+      name: 'KISHORE',
       role: t('developer'),
       avatar: '/avatars/team3.jpg',
+    },
+    {
+      name: 'SAI SANDDEP',
+      role: t('developer'),
+      avatar: '/avatars/team4.jpg',
     },
   ];
 

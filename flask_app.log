@@ -1,0 +1,243 @@
+2026-06-06 10:32:48,535 - __main__ - INFO - Environment variables loaded
+2026-06-06 10:32:48,535 - __main__ - INFO - NVIDIA API key loaded: nvapi-XJ...qjBi
+2026-06-06 10:32:48,540 - __main__ - ERROR - Failed to start Flask application: 'NoneType' object has no attribute '__version__'
+Traceback (most recent call last):
+  File "c:\Users\GANESH\OneDrive\Desktop\farm_health_project\backend\app.py", line 743, in <module>
+    print("TensorFlow version:", tf.__version__)
+                                 ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '__version__'
+2026-06-06 10:33:15,576 - __main__ - INFO - Environment variables loaded
+2026-06-06 10:33:15,577 - __main__ - INFO - NVIDIA API key loaded: nvapi-XJ...qjBi
+2026-06-06 10:33:15,686 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-06 10:33:15,687 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-06 10:34:16,084 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:34:16,085 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:34:16,085 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:34:16,085 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:34:16,086 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:34:16,127 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:34:18,141 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:34:18,141 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:34:18,141 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:04:17 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:34:18,161 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:18,161 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:18,162 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:34:18,162 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:18,163 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:18,163 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:18,166 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:34:18] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:34:18,171 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:34:18,171 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:34:18,171 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:34:18,172 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:34:18,172 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:34:18,176 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:34:18,873 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:34:18,874 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:34:18,875 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:04:18 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:34:18,876 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:18,877 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:18,877 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:34:18,878 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:18,878 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:18,879 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:18,882 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:34:18] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:34:27,165 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:34:27,166 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:34:27,166 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:34:27,167 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:34:27,167 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:34:27,171 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:34:29,114 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:34:29,115 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:34:29,115 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:04:28 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:34:29,116 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:29,116 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:29,117 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:34:29,117 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:29,118 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:29,118 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:29,123 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:34:29] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:34:29,132 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:34:29,133 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:34:29,134 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:34:29,136 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:34:29,136 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:34:29,140 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:34:30,829 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:34:30,831 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:34:30,831 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:04:30 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:34:30,831 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:30,832 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:30,832 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:34:30,832 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:30,833 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:30,833 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:30,836 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:34:30] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:34:32,625 - __main__ - WARNING - TensorFlow not available - using demo predictions
+2026-06-06 10:34:32,626 - __main__ - INFO - Using demo prediction (model not available)
+2026-06-06 10:34:32,627 - __main__ - INFO - Using NVIDIA API key: nvapi-XJ...qjBi
+2026-06-06 10:34:32,628 - __main__ - INFO - Making AI API request for disease: Corn_(maize)Northern_Leaf_Blight in English
+2026-06-06 10:34:32,629 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:34:32,629 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:34:32,629 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are an expert plant pathologist and agricultural advisor. You must respond ONLY in English language. Never use any other language in your response.'}, {'role': 'user', 'content': 'You are an expert plant pathologist. Provide detailed treatment advice for Corn_(maize)Northern_Leaf_Blight in English language only. Do not use any other language.\n\n        Include the following information in English:\n        1. Immediate actions to take\n        2. Recommended treatments/medicines\n        3. Preventive measures\n        4. Expected recovery time\n        5. When to seek professional help\n        \n        Format the response in clear, easy-to-follow steps. Remember to respond ONLY in English language.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 1024, 'stream': False}
+2026-06-06 10:34:32,635 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:34:35,299 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:34:35,301 - __main__ - INFO - AI API Response Status: 403
+2026-06-06 10:34:35,301 - __main__ - INFO - AI API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:04:34 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:34:35,303 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:35,303 - __main__ - INFO - AI API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:35,304 - __main__ - ERROR - AI API Error: Status code 403
+2026-06-06 10:34:35,305 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:34:35,306 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:34:35,317 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:34:35] "POST /api/predict HTTP/1.1" 200 -
+2026-06-06 10:36:20,890 - __main__ - INFO - Environment variables loaded
+2026-06-06 10:36:20,891 - __main__ - INFO - NVIDIA API key loaded: nvapi-XJ...qjBi
+2026-06-06 10:36:20,950 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-06 10:36:20,951 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-06 10:36:39,892 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:36:39,892 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:36:39,893 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:36:39,894 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:36:39,894 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:36:39,897 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:36:41,841 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:36:41,842 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:36:41,843 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:06:41 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:36:41,845 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:41,847 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:36:41,847 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:36:41,848 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:41,849 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:36:41,850 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:41,856 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:36:41] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:36:41,861 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:36:41,861 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:36:41,861 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:36:41,863 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:36:41,863 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:36:41,869 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:36:43,286 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:36:43,286 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:36:43,289 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:06:42 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:36:43,292 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:43,293 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:36:43,295 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:36:43,297 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:43,297 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:36:43,299 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:43,306 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:36:43] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:36:47,384 - __main__ - WARNING - TensorFlow not available - using demo predictions
+2026-06-06 10:36:47,385 - __main__ - INFO - Using demo prediction (model not available)
+2026-06-06 10:36:47,386 - __main__ - INFO - Using NVIDIA API key: nvapi-XJ...qjBi
+2026-06-06 10:36:47,387 - __main__ - INFO - Making AI API request for disease: Potato_Late_blight in English
+2026-06-06 10:36:47,388 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:36:47,389 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:36:47,390 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are an expert plant pathologist and agricultural advisor. You must respond ONLY in English language. Never use any other language in your response.'}, {'role': 'user', 'content': 'You are an expert plant pathologist. Provide detailed treatment advice for Potato_Late_blight in English language only. Do not use any other language.\n\n        Include the following information in English:\n        1. Immediate actions to take\n        2. Recommended treatments/medicines\n        3. Preventive measures\n        4. Expected recovery time\n        5. When to seek professional help\n        \n        Format the response in clear, easy-to-follow steps. Remember to respond ONLY in English language.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 1024, 'stream': False}
+2026-06-06 10:36:47,397 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:36:49,395 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:36:49,405 - __main__ - INFO - AI API Response Status: 403
+2026-06-06 10:36:49,406 - __main__ - INFO - AI API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:06:49 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:36:49,407 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:49,407 - __main__ - INFO - AI API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:36:49,408 - __main__ - ERROR - AI API Error: Status code 403
+2026-06-06 10:36:49,408 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:36:49,409 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:36:49,415 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:36:49] "POST /api/predict HTTP/1.1" 200 -
+2026-06-06 10:37:17,967 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:37:17,968 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:37:17,968 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:37:17,968 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:37:17,968 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:37:17,971 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:37:20,084 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:37:20,087 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:37:20,089 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:07:19 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:37:20,090 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:20,091 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:37:20,091 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:37:20,093 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:20,094 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:37:20,096 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:20,106 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:37:20] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:37:20,418 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:37:20,421 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:37:20,422 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:37:20,422 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:37:20,423 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:37:20,431 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:37:22,854 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:37:22,856 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:37:22,857 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:07:22 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:37:22,858 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:22,859 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:37:22,861 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:37:22,863 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:22,865 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:37:22,868 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:22,875 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:37:22] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:37:27,873 - __main__ - WARNING - TensorFlow not available - using demo predictions
+2026-06-06 10:37:27,874 - __main__ - INFO - Using demo prediction (model not available)
+2026-06-06 10:37:27,875 - __main__ - INFO - Using NVIDIA API key: nvapi-XJ...qjBi
+2026-06-06 10:37:27,877 - __main__ - INFO - Making AI API request for disease: Pepper,_bell_Bacterial_spot in English
+2026-06-06 10:37:27,877 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:37:27,878 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:37:27,878 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are an expert plant pathologist and agricultural advisor. You must respond ONLY in English language. Never use any other language in your response.'}, {'role': 'user', 'content': 'You are an expert plant pathologist. Provide detailed treatment advice for Pepper,_bell_Bacterial_spot in English language only. Do not use any other language.\n\n        Include the following information in English:\n        1. Immediate actions to take\n        2. Recommended treatments/medicines\n        3. Preventive measures\n        4. Expected recovery time\n        5. When to seek professional help\n        \n        Format the response in clear, easy-to-follow steps. Remember to respond ONLY in English language.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 1024, 'stream': False}
+2026-06-06 10:37:27,884 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:37:30,433 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:37:30,435 - __main__ - INFO - AI API Response Status: 403
+2026-06-06 10:37:30,436 - __main__ - INFO - AI API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:07:30 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:37:30,437 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:30,438 - __main__ - INFO - AI API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:37:30,440 - __main__ - ERROR - AI API Error: Status code 403
+2026-06-06 10:37:30,441 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:37:30,442 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:37:30,453 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:37:30] "POST /api/predict HTTP/1.1" 200 -
+2026-06-06 10:38:47,086 - __main__ - INFO - Environment variables loaded
+2026-06-06 10:38:47,087 - __main__ - INFO - NVIDIA API key loaded: nvapi-XJ...qjBi
+2026-06-06 10:38:47,135 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-06 10:38:47,136 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-06-06 10:38:55,309 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:38:55,310 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:38:55,310 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:38:55,311 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:38:55,312 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:38:55,342 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:38:59,640 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:38:59,641 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:38:59,641 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:08:59 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:38:59,647 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:38:59,650 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:38:59,652 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:38:59,654 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:38:59,655 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:38:59,656 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:38:59,661 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:38:59] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:38:59,669 - __main__ - INFO - Testing AI API with key: nvapi-XJ...qjBi
+2026-06-06 10:38:59,672 - __main__ - INFO - Sending test request to NVIDIA API...
+2026-06-06 10:38:59,675 - __main__ - INFO - Request URL: https://integrate.api.nvidia.com/v1/chat/completions
+2026-06-06 10:38:59,675 - __main__ - INFO - Request headers: {'Content-Type': 'application/json', 'Authorization': 'Bearer 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'}
+2026-06-06 10:38:59,676 - __main__ - INFO - Request data: {'model': 'nvidia/llama-3.1-nemotron-70b-instruct', 'messages': [{'role': 'system', 'content': 'You are a helpful AI assistant.'}, {'role': 'user', 'content': 'Hello, this is a test message.'}], 'temperature': 0.5, 'top_p': 1, 'max_tokens': 100, 'stream': False}
+2026-06-06 10:38:59,685 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:39:01,419 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:39:01,421 - __main__ - INFO - NVIDIA API Response Status: 403
+2026-06-06 10:39:01,421 - __main__ - INFO - NVIDIA API Response Headers: {'Date': 'Sat, 06 Jun 2026 05:09:00 GMT', 'Content-Type': 'application/problem+json', 'Content-Length': '66', 'Connection': 'keep-alive', 'Vary': 'Origin'}
+2026-06-06 10:39:01,423 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:39:01,423 - __main__ - INFO - NVIDIA API Response: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:39:01,424 - __main__ - ERROR - AI API returned error status: 403
+2026-06-06 10:39:01,424 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:39:01,426 - __main__ - ERROR - Response text: {"status":403,"title":"Forbidden","detail":"Authorization failed"}
+2026-06-06 10:39:01,426 - charset_normalizer - DEBUG - Encoding detection: ascii is most likely the one.
+2026-06-06 10:39:01,435 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:39:01] "[35m[1mGET /api/test-ai HTTP/1.1[0m" 500 -
+2026-06-06 10:39:03,933 - __main__ - WARNING - TensorFlow not available - using demo predictions
+2026-06-06 10:39:03,943 - __main__ - INFO - Using demo prediction (model not available)
+2026-06-06 10:39:03,949 - __main__ - INFO - Using NVIDIA API key: nvapi-XJ...qjBi
+2026-06-06 10:39:03,956 - __main__ - INFO - Making AI API request for disease: Tomato_healthy in English
+2026-06-06 10:39:03,981 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): integrate.api.nvidia.com:443
+2026-06-06 10:39:06,895 - urllib3.connectionpool - DEBUG - https://integrate.api.nvidia.com:443 "POST /v1/chat/completions HTTP/1.1" 403 66
+2026-06-06 10:39:06,899 - __main__ - INFO - AI API Response Status: 403
+2026-06-06 10:39:06,902 - __main__ - WARNING - AI API Error: Status code 403, using fallback
+2026-06-06 10:39:06,924 - werkzeug - INFO - 127.0.0.1 - - [06/Jun/2026 10:39:06] "POST /api/predict HTTP/1.1" 200 -

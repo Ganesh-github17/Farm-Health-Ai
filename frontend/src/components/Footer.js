@@ -17,9 +17,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
 import BugReportIcon from '@mui/icons-material/BugReport';
 
 const Footer = () => {
@@ -41,12 +38,6 @@ const Footer = () => {
     { text: t('nav.buy_medicine'), path: '/buy-medicine' },
     { text: t('nav.farmer_contribution'), path: '/farmer-contribution' },
     { text: t('nav.about'), path: '/about' },
-  ];
-
-  const contactInfo = [
-    { icon: <EmailIcon />, text: 'addankiavinash1@gmail.com' },
-    { icon: <PhoneIcon />, text: '9182815770' },
-    { icon: <LocationOnIcon />, text: 'Malkajgiri, Hyderabad 500017' },
   ];
 
   return (
@@ -122,44 +113,6 @@ const Footer = () => {
                   >
                     {link.text}
                   </Link>
-                </Box>
-              ))}
-            </Box>
-          </Grid>
-
-          {/* Contact Info */}
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
-              {t('footer.contact')}
-            </Typography>
-            <Box component="ul" sx={{ listStyle: 'none', p: 0, m: 0 }}>
-              {contactInfo.map((info, index) => (
-                <Box
-                  component="li"
-                  key={index}
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    mb: 1.5,
-                    color: 'text.secondary',
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      width: 28,
-                      height: 28,
-                      borderRadius: '50%',
-                      backgroundColor: 'primary.light',
-                      color: 'primary.main',
-                      mr: 1,
-                    }}
-                  >
-                    {info.icon}
-                  </Box>
-                  <Typography variant="body2">{info.text}</Typography>
                 </Box>
               ))}
             </Box>
