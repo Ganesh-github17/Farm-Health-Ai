@@ -35,7 +35,7 @@ import healthyPlantImage from '../assets/images (8).jpeg.jpg';
 import diseasedPlantImage from '../assets/images (10).jpeg.jpg';
 
 // Define API URL
-const API_URL = process.env.NODE_ENV === 'production' ? '/_/backend' : 'http://localhost:5000';
+const API_URL = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
 
 // Example images array
 const exampleImages = [
