@@ -443,7 +443,7 @@ def predict_disease(image_path):
         raise
 
 # Route for disease prediction
-@app.route('/api/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     """Handle disease prediction requests"""
     try:
@@ -490,7 +490,7 @@ def predict():
         return jsonify({'error': str(e)}), 500
 
 # Route for expert advice
-@app.route('/api/expert-advice', methods=['POST', 'OPTIONS'])
+@app.route('/expert-advice', methods=['POST', 'OPTIONS'])
 def get_expert_advice():
     if request.method == 'OPTIONS':
         return '', 200
@@ -555,7 +555,7 @@ def get_expert_advice():
         return jsonify({'error': str(e)}), 500
 
 # Route for testing API connection
-@app.route('/api/test-ai', methods=['GET', 'OPTIONS'])
+@app.route('/test-ai', methods=['GET', 'OPTIONS'])
 def test_ai():
     if request.method == 'OPTIONS':
         return '', 200

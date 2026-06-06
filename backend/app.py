@@ -53,6 +53,11 @@ CORS(app, resources={
         "origins": ["http://localhost:*"],
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type"]
+    },
+    r"/*": {
+        "origins": ["http://localhost:*"],
+        "methods": ["GET", "POST", "OPTIONS"],
+        "allow_headers": ["Content-Type"]
     }
 })
 
@@ -447,6 +452,7 @@ def predict_disease(image_path):
         raise
 
 # Route for disease prediction
+@app.route('/predict', methods=['POST'])
 @app.route('/api/predict', methods=['POST'])
 def predict():
     """Handle disease prediction requests"""
@@ -494,6 +500,7 @@ def predict():
         return jsonify({'error': str(e)}), 500
 
 # Route for expert advice
+@app.route('/expert-advice', methods=['POST', 'OPTIONS'])
 @app.route('/api/expert-advice', methods=['POST', 'OPTIONS'])
 def get_expert_advice():
     if request.method == 'OPTIONS':
@@ -559,6 +566,7 @@ def get_expert_advice():
         return jsonify({'error': str(e)}), 500
 
 # Route for testing API connection
+@app.route('/test-ai', methods=['GET', 'OPTIONS'])
 @app.route('/api/test-ai', methods=['GET', 'OPTIONS'])
 def test_ai():
     if request.method == 'OPTIONS':

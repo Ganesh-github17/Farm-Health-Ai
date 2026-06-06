@@ -35,7 +35,7 @@ import healthyPlantImage from '../assets/images (8).jpeg.jpg';
 import diseasedPlantImage from '../assets/images (10).jpeg.jpg';
 
 // Define API URL
-const API_URL = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+const API_URL = process.env.NODE_ENV === 'production' ? '/_/backend' : 'http://localhost:5000';
 
 // Example images array
 const exampleImages = [
@@ -71,7 +71,7 @@ const DiseaseDetection = () => {
   const testAiConnection = async () => {
     setTestingAi(true);
     try {
-      const response = await fetch(`${API_URL}/api/test-ai`);
+      const response = await fetch(`${API_URL}/test-ai`);
       const data = await response.json();
       
       if (data.status === 'success') {
@@ -118,7 +118,7 @@ const DiseaseDetection = () => {
     formData.append('language', i18n.language === 'hi' ? 'Hindi' : i18n.language === 'te' ? 'Telugu' : 'English');
 
     try {
-      const response = await fetch(`${API_URL}/api/predict`, {
+      const response = await fetch(`${API_URL}/predict`, {
         method: 'POST',
         body: formData,
       });

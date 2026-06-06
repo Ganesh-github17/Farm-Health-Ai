@@ -26,7 +26,7 @@ import AgricultureIcon from '@mui/icons-material/Agriculture';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 
-const API_URL = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+const API_URL = process.env.NODE_ENV === 'production' ? '/_/backend' : 'http://localhost:5000';
 
 const ExpertAdvice = () => {
   const { t, i18n } = useTranslation();
@@ -80,7 +80,7 @@ const ExpertAdvice = () => {
     setAdvice('');
 
     try {
-      const response = await axios.post(`${API_URL}/api/expert-advice`, {
+      const response = await axios.post(`${API_URL}/expert-advice`, {
         ...formData,
         language: i18n.language
       });
